@@ -41,13 +41,12 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      /* Replace the src attribute with your image path */
     }
 
     .platforms {
       list-style: none;
       padding: 0;
-      margin: 1rem 0;
+      margin: 1rem 0 0.5rem 0;
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -60,12 +59,27 @@
       font-weight: bold;
     }
 
+    .privacy-link {
+      margin-top: 0.25rem;
+    }
+
+    .privacy-link a {
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: bold;
+    }
+
     footer {
       background: #222;
       color: #fff;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -74,9 +88,9 @@
     <h1>Projects</h1>
   </header>
 
-  <!-- Favel Kick: The Final Goal -->
-  <section class="game-block" id="favel-kick-final-goal">
-    <h2>Favel Kick: The Final Goal</h2>
+  <!-- Favela Kick: The Final Goal -->
+  <section class="game-block" id="favela-kick-final-goal">
+    <h2>Favela Kick: The Final Goal</h2>
     <img src="./favela-kick.png" alt="Favel Kick: The Final Goal">
     <p>Can you go from dusty streets to global superstardom?</p>
     <ul class="platforms">
@@ -84,10 +98,11 @@
       <li><a href="#">App Store</a></li>
       <li><a href="https://store.steampowered.com/app/3603110/Favela_Kick_The_Final_Goal/">Steam</a></li>
     </ul>
+    <p class="privacy-link"><a href="favela-kick-privacy.html">Privacy Policy</a></p>
     <p><strong>Initial release:</strong> 2025</p>
   </section>
 
-    <!-- Football Referee Simulator -->
+  <!-- Football Referee Simulator -->
   <section class="game-block" id="football-referee-simulator">
     <h2>Football Referee Simulator</h2>
     <img src="./football-referee-simulator.jpg" alt="Football Referee Simulator">
@@ -97,11 +112,12 @@
       <li><a href="https://apps.apple.com/us/app/football-referee-simulator/id1581640677">App Store</a></li>
       <li><a href="https://store.steampowered.com/app/3002620/Football_Referee_Simulator/">Steam</a></li>
     </ul>
+    <p class="privacy-link"><a href="football-referee-privacy.html">Privacy Policy</a></p>
     <p><strong>Initial release:</strong> 2021</p>
   </section>
 
   <footer>
-    © All rights reserved. The games developed by Vladimir Pliashkun
+    © All rights reserved. The games developed by Vladimir Pliashkun | <a href="support.html">Support</a>
   </footer>
 </body>
 </html>
