@@ -3,149 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vladimir Pliashkun Games</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #fafafa;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .game-block {
-      padding: 2rem 1rem;
-      border-bottom: 1px solid #e1e1e1;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .game-block h2 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-
-    .game-block img {
-      display: block;
-      margin: 1rem auto;
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    .platforms {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0.5rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .platforms li a {
-      text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
-    }
-
-    .privacy-link {
-      margin-top: 0.25rem;
-    }
-
-    .privacy-link a {
-      text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="description" content="Independent games by Vladimir Pliashkun. Discover BarHit, Football Club Inside, Favela Kick, Football Referee Simulator, and the upcoming Second On Ice.">
+  <meta name="theme-color" content="#f8f6f0">
+  <meta property="og:title" content="Vladimir Pliashkun — Independent Games">
+  <meta property="og:description" content="Games by Vladimir Pliashkun, for mobile and PC. Browse the released games and the upcoming Second On Ice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vladimirplyashkun.com/">
+  <meta property="og:image" content="https://vladimirplyashkun.com/assets/second-on-ice.jpg">
+  <link rel="canonical" href="https://vladimirplyashkun.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bitter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261108-3">
+  <script src="catalog.js" defer></script>
+  <title>Vladimir Pliashkun — Independent Games</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10957152799"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-10957152799');
+  </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10957152799"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10957152799');
-</script>
-
 <body>
-  <header>
-    <h1>Projects</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Vladimir Pliashkun — Home"><span>Vladimir Pliashkun<span class="brand-caption">Independent game developer</span></span></a>
+      <nav aria-label="Main navigation"><a href="#games">Games</a><a href="#second-on-ice">Upcoming</a><a href="support.html">Support</a></nav>
+    </div>
   </header>
+  <main id="main" class="container">
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">Hi, I’m Vladimir.<br>I make games.</h1>
+      <p class="intro-note">Independent games for mobile and PC.<br>Mostly football. Now hockey, too.</p>
+    </section>
 
-  <!-- Football Club Inside -->
-  <section class="game-block" id="football-club-inside">
-    <h2>Football Club Inside</h2>
-    <img src="./football-club-inside.png" alt="Football Club Inside">
-    <p>Lead a small football club through one unforgettable season.</p>
-    <ul class="platforms">
-      <li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FootballClubInside">Google Play</a></li>
-      <li><a href="https://apps.apple.com/us/app/football-club-inside/id6758112980">App Store</a></li>
-      <li><a href="https://store.steampowered.com/app/4103500/Football_Club_Inside/">Steam</a></li>
-      <li><a href="https://store.epicgames.com/en-US/p/football-club-inside-028a36">EGS</a></li>
-    </ul>
-    <p class="privacy-link"><a href="football-club-inside-privacy.html">Privacy Policy</a></p>
-    <p><strong>Initial release:</strong> 2026</p>
-  </section>
+    <section class="feature" id="second-on-ice" aria-labelledby="upcoming-title">
+      <div class="feature-art">
+        <img src="assets/second-on-ice.jpg" width="1671" height="941" alt="Two rival hockey players face off in Second On Ice" fetchpriority="high">
+      </div>
+      <div class="feature-copy">
+        <p class="project-note">What I’m working on next</p>
+        <h2 id="upcoming-title">Second On Ice</h2>
+        <p class="feature-description">Step out of your brother’s shadow in a story-driven hockey game about family and rivalry, from snowy neighborhood rinks to packed arenas.</p>
+        <p class="release-note">Coming soon.</p>
+        <a class="privacy-link" href="second-on-ice-privacy.html">Privacy policy</a>
+      </div>
+    </section>
 
-  <!-- Favela Kick: The Final Goal -->
-  <section class="game-block" id="favela-kick-final-goal">
-    <h2>Favela Kick: The Final Goal</h2>
-    <img src="./favela-kick.png" alt="Favel Kick: The Final Goal">
-    <p>Can you go from dusty streets to global superstardom?</p>
-    <ul class="platforms">
-      <li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FavelaKick">Google Play</a></li>
-      <li><a href="https://apps.apple.com/us/app/favela-kick-the-final-goal/id6746564739">App Store</a></li>
-      <li><a href="https://store.steampowered.com/app/3603110/Favela_Kick_The_Final_Goal/">Steam</a></li>
-      <li><a href="https://store.epicgames.com/en-US/p/favela-kick-the-final-goal-ad8a1f?lang=en-US">EGS</a></li>
-    </ul>
-    <p class="privacy-link"><a href="favela-kick-privacy.html">Privacy Policy</a></p>
-    <p><strong>Initial release:</strong> 2025</p>
-  </section>
-
-  <!-- Football Referee Simulator -->
-  <section class="game-block" id="football-referee-simulator">
-    <h2>Football Referee Simulator</h2>
-    <img src="./football-referee-simulator.jpg" alt="Football Referee Simulator">
-    <p>Become the best referee!</p>
-    <ul class="platforms">
-      <li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FootballReferee">Google Play</a></li>
-      <li><a href="https://apps.apple.com/us/app/football-referee-simulator/id1581640677">App Store</a></li>
-      <li><a href="https://store.steampowered.com/app/3002620/Football_Referee_Simulator/">Steam</a></li>
-      <li><a href="https://store.epicgames.com/en-US/p/football-referee-simulator-291cd6?lang=en-US">EGS</a></li>
-    </ul>
-    <p class="privacy-link"><a href="football-referee-privacy.html">Privacy Policy</a></p>
-    <p><strong>Initial release:</strong> 2021</p>
-  </section>
-
-  <footer>
-    © All rights reserved. The games developed by Vladimir Pliashkun | <a href="support.html">Support</a>
-  </footer>
+    <section class="catalog" id="games" aria-labelledby="games-title">
+      <div class="section-heading"><h2 id="games-title">Released games</h2><p id="result-count" role="status" aria-live="polite" aria-atomic="true">4 games · available now</p></div>
+      <div class="catalog-controls" id="catalog-controls" hidden>
+        <div class="platform-filters" role="group" aria-label="Filter by platform">
+          <button type="button" class="filter-button" data-platform="all" aria-pressed="true">All platforms</button>
+          <button type="button" class="filter-button" data-platform="ios" aria-pressed="false">iOS</button>
+          <button type="button" class="filter-button" data-platform="android" aria-pressed="false">Android</button>
+          <button type="button" class="filter-button" data-platform="pc" aria-pressed="false">PC</button>
+        </div>
+        <div class="select-filters"><label for="year-filter">Year <select id="year-filter"><option value="all">All years</option><option value="2026">2026</option><option value="2025">2025</option><option value="2021">2021</option></select></label><label for="group-by">Group by <select id="group-by"><option value="year">Release year</option><option value="platform">Platform</option></select></label></div>
+      </div>
+      <div id="game-groups">
+        <section class="game-group" aria-labelledby="year-2026"><div class="group-heading"><h3 id="year-2026">2026</h3><span>2 games</span></div><div class="game-grid">
+          <article class="game-card" id="barhit" data-year="2026" data-platforms="ios android">
+            <div class="game-art"><img src="assets/barhit.jpg" width="1440" height="810" alt="BarHit: a flaming football hits the crossbar in a floodlit arena" loading="lazy" decoding="async"></div>
+            <div class="game-copy"><div class="game-meta"><span>Football arcade</span><span>2026</span></div><h4>BarHit</h4><p class="game-description">Hit the crossbar, build your streak, and unlock exciting football arenas!</p><ul class="store-links" aria-label="Get BarHit"><li><a href="https://apps.apple.com/us/app/barhit/id6820227547">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.BarHit">Google Play</a></li></ul><div class="game-footer"><span>iOS · Android</span><a href="bar-rush-privacy.html">Privacy policy</a></div></div>
+          </article>
+          <article class="game-card" id="football-club-inside" data-year="2026" data-platforms="ios android pc">
+            <div class="game-art"><img src="assets/football-club-inside.jpg" width="1232" height="706" alt="Football Club Inside: a manager looks over the stadium at sunset" loading="lazy" decoding="async"></div>
+            <div class="game-copy"><div class="game-meta"><span>Football management</span><span>2026</span></div><h4>Football Club Inside</h4><p class="game-description">Lead a small football club through one unforgettable season.</p><ul class="store-links" aria-label="Get Football Club Inside"><li><a href="https://apps.apple.com/us/app/football-club-inside/id6758112980">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FootballClubInside">Google Play</a></li><li><a href="https://store.steampowered.com/app/4103500/Football_Club_Inside/">Steam</a></li><li><a href="https://store.epicgames.com/en-US/p/football-club-inside-028a36">Epic Games</a></li></ul><div class="game-footer"><span>iOS · Android · PC</span><a href="football-club-inside-privacy.html">Privacy policy</a></div></div>
+          </article>
+        </div></section>
+        <section class="game-group" aria-labelledby="year-2025"><div class="group-heading"><h3 id="year-2025">2025</h3><span>1 game</span></div><div class="game-grid">
+          <article class="game-card" id="favela-kick-final-goal" data-year="2025" data-platforms="ios android pc">
+            <div class="game-art"><img src="assets/favela-kick.jpg" width="1440" height="807" alt="A young footballer plays above the rooftops of a favela at sunset" loading="lazy" decoding="async"></div>
+            <div class="game-copy"><div class="game-meta"><span>Football adventure</span><span>2025</span></div><h4>Favela Kick: The Final Goal</h4><p class="game-description">Can you go from dusty streets to global superstardom?</p><ul class="store-links" aria-label="Get Favela Kick: The Final Goal"><li><a href="https://apps.apple.com/us/app/favela-kick-the-final-goal/id6746564739">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FavelaKick">Google Play</a></li><li><a href="https://store.steampowered.com/app/3603110/Favela_Kick_The_Final_Goal/">Steam</a></li><li><a href="https://store.epicgames.com/en-US/p/favela-kick-the-final-goal-ad8a1f?lang=en-US">Epic Games</a></li></ul><div class="game-footer"><span>iOS · Android · PC</span><a href="favela-kick-privacy.html">Privacy policy</a></div></div>
+          </article>
+        </div></section>
+        <section class="game-group" aria-labelledby="year-2021"><div class="group-heading"><h3 id="year-2021">2021</h3><span>1 game</span></div><div class="game-grid">
+          <article class="game-card" id="football-referee-simulator" data-year="2021" data-platforms="ios android pc">
+            <div class="game-art"><img src="assets/football-referee-simulator.jpg" width="1024" height="500" alt="A football referee raises a red card in a packed stadium" loading="lazy" decoding="async"></div>
+            <div class="game-copy"><div class="game-meta"><span>Referee simulation</span><span>2021</span></div><h4>Football Referee Simulator</h4><p class="game-description">Become the best referee!</p><ul class="store-links" aria-label="Get Football Referee Simulator"><li><a href="https://apps.apple.com/us/app/football-referee-simulator/id1581640677">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.VladimirPlyashkun.FootballReferee">Google Play</a></li><li><a href="https://store.steampowered.com/app/3002620/Football_Referee_Simulator/">Steam</a></li><li><a href="https://store.epicgames.com/en-US/p/football-referee-simulator-291cd6?lang=en-US">Epic Games</a></li></ul><div class="game-footer"><span>iOS · Android · PC</span><a href="football-referee-privacy.html">Privacy policy</a></div></div>
+          </article>
+        </div></section>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><h3>No games in this selection.</h3><p>Try another platform or release year.</p><button class="button" id="reset-filters" type="button">Show all games</button></div>
+      <p class="catalog-note">Years indicate each game’s initial release. Availability may vary by platform and region.</p>
+    </section>
+    <section class="contact-strip" aria-labelledby="contact-title">
+      <h2 id="contact-title">Questions or feedback?</h2>
+      <a href="support.html">Get in touch</a>
+    </section>
+  </main>
+  <footer class="site-footer container"><p>© 2026 Vladimir Pliashkun. All rights reserved.</p><div><a href="support.html">Support</a></div></footer>
 </body>
 </html>
